@@ -6,4 +6,6 @@ import store from './store'
 import 'normalize.css/normalize.css'
 import '@/styles/index.scss'
 
-createApp(App).use(store).use(router).mount('#app')
+import Mui from '@/components'
+
+createApp(App).use(store).use(router).use(Mui).mount('#app')

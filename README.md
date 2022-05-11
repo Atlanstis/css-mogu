@@ -1,15 +1,24 @@
-# css 方案设计（蘑菇街页面为例）
+# css 方案设计
 
-## BEM
+## Setting 层
 
-- 块（Block）、元素（Element \_\_）、修饰符（Modifier --）
-- 作用：命名规范、让页面结构清晰
+- 定义公共变量
 
-## SMACSS
+- 公共变量：颜色、边框、字体大小、阴影、层级...
 
-- 分类：Base、Layout、Modules、State、Theme
-- 好处：易维护、易复用、易拓展
+## Tools 层
 
-## ITCSS
+- 定义常见的 css 片段，函数等
 
-## ACSS
+- [SassMagic 工具库](https://github.com/W3cplus/SassMagic)
+
+## Base 层
+
+- Generic 层：引入 [normalize.css](https://github.com/necolas/normalize.css)，重置浏览器默认样式
+
+- Base 层：对各类元素基础样式进行补充
+
+## Commonents 层
+
+- 经典的组件：栅格、布局组件
+- 自定义组件
