@@ -1,5 +1,13 @@
-@import 'base/article.scss';
-@import 'base/form.scss';
-@import 'base/images.scss';
-@import 'base/link.scss';
-@import 'base/page.scss';
+@import './base/article.scss';
+@import './base/form.scss';
+@import './base/images.scss';
+@import './base/link.scss';
+@import './base/page.scss';
+
+@import './acss/border.scss';
+@import './acss/color.scss';
+@import './acss/decoration.scss';
+@import './acss/ellipsis.scss';
+@import './acss/font-size.scss';
+@import './acss/white-space.scss';
+@import './acss/z-index.scss';
