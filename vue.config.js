@@ -4,6 +4,17 @@ module.exports = defineConfig({
 
   css: {
     loaderOptions: {
+      postcss: {
+        postcssOptions: {
+          plugins: [
+            require('postcss-plugin-px2rem')({
+              rootValue: 37.5,
+              exclude: /(node_modules)/,
+              minPixelValue: 3,
+            }),
+          ],
+        },
+      },
       scss: {
         additionalData: `
           @import "~@/styles/tools/_sassMagic.scss";
