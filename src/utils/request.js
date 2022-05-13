@@ -7,7 +7,8 @@ service.interceptors.request.use((config) => {
 })
 
 service.interceptors.response.use((response) => {
-  return response
+  const { data } = response
+  return data
 })
 
 export default service
